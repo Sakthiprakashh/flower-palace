@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e7008a;
+    padding: 10px;
+
+    top: 0;
+    box-shadow: inset 0 0 35px 5px rgba(0, 0, 0, 0.25), inset 0 2px 1px 1px rgba(255, 255, 255, 0.9), inset 0 -2px 1px rgba(0, 0, 0, 0.25);
+
+
+}
+
+nav h1 {
+    color: white;
+    font-size: 30px;
+}
+
+nav span {
+    color: yellow;
+}
+
+#nav-bar {
+
+    display: flex;
+    margin-right: 10px;
+    column-gap: 30px;
+
+
+}
+
+.nav-links {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+
+
+}
+
+.nav-links:hover {
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+
+}
+
+#togle {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* 
+    #layout{
+    
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity:0.7 ;
+       
+        
+    
+       
+    
+    } */
+#form {
+
+
+    position: relative;
+
+    bottom: 200px;
+    width: 30%;
+    padding-top: 2%;
+    background-color: yellowgreen;
+    opacity: 0.8;
+
+    padding: 2%;
+    border-radius: 5%;
+    padding-top: 20px;
+    box-shadow: 10px 20px 30px black;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box {
+    0% {
+        box-shadow: 10px 30px 30px black;
+
+    }
+
+    25% {
+        box-shadow: -33px 30px 30px black;
+
+    }
+
+    50% {
+        box-shadow: 20px -34px 30px black;
+    }
+
+    100% {
+        box-shadow: 30px 32px 30px black;
+    }
+}
+
+input {
+    border: none;
+    width: 80%;
+    padding: 1%;
+    border-bottom: 2px solid pink;
+    background-color: transparent;
+    color: white;
+    padding-bottom: 10px;
+
+
+
+}
+
+input::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+#popup-btn {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border: none;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#popup-btn:hover {
+    transform: scale(1.1);
+    transform: 3s;
+
+}
+
+.imgg {
+    display: none;
+    height: 10%;
+    width: 10%;
+}
+
+#order-placed h2 {
+    position: relative;
+    bottom: 100px;
+    animation-name: ss;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#order-placed h3 {
+
+    display: none;
+    animation-name: ss;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ss {
+    50% {
+        color: red;
+        text-shadow: 2px 1px 1px black;
+    }
+}
+
+#order-placed {
+    display: none;
+    opacity: 0.8;
+}
+
+#order-placed button {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border: none;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+@media screen and (max-width:900px) {
+    #form {
+        bottom: 0;
+        width: 60%;
+    }
+
+    .imgg {
+        margin-top: 5%;
+    }
+
+    #order-placed h2 {
+        position: relative;
+        top: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #form {
+        bottom: 0;
+        width: 70%;
+    }
+
+    .imgg {
+        height: 40%;
+        width: 50%;
+        opacity: 0.8;
+        border-radius: 20px;
+        display: block;
+
+    }
+
+    #order-placed h2 {
+        display: none;
+    }
+
+    #order-placed h3 {
+        display: block;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #form {
+        width: 80%;
+
+    }
+
+    #popup-btn {
+        margin-left: 0;
+    }
+
+    .imgg {
+        height: 30%;
+        width: 40%;
+        opacity: 0.8;
+        border-radius: 20px;
+        margin-top: 7%;
+        display: block;
+
+    }
+
+    #order-placed h3 {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width:340px) {
+    #form {
+        width: 80%;
+    }
+
+    #popup-btn {
+        margin-top: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+
+        border: none;
+        background-color: yellow;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #togle {
+        display: block;
+    }
+}
